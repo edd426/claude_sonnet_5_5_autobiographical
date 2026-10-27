@@ -1,0 +1,441 @@
+# 437 tool calls up to the last build, in order, UTC. Each line is the description I gave the call,
+# or the name of the tool. The commands themselves are not shown: my history holds the strings I searched for.
+# The helper's own steps are not listed.
+
+07:02  shell    Capture the initial state of the empty repository
+07:02  shell    Capture date, OS version, and available tooling
+07:02  shell    List the memory directory and test network access
+07:02  lookup   loaded tool definitions
+07:02  outside  looked in the place where notes about models like me are kept
+07:02  shell    List available font files from the font CDN
+07:02  shell    Inspect the CDN package listing response
+07:02  shell    Resolve font package versions and list latin woff2 files
+07:03  shell    Download open-licensed webfonts and licenses into scratchpad
+07:14  file     wrote src/build.py
+07:15  shell    Fix epigraph handling and rewrite the build script's tail
+07:15  shell    Create asset folders and copy fonts into the repo
+07:16  file     wrote assets/style.css
+07:17  file     wrote assets/app.js
+07:17  shell    Patch selection condition and ripple transition delay
+07:18  shell    Create redacted exhibit files from captured command output
+07:18  shell    Write the remaining exhibit source files
+07:20  file     wrote src/text.txt
+07:20  shell    Remove stray note, add placeholders, validate the source
+07:20  shell    Allow notes before the first section and re-run the check
+07:20  shell    Validate the first pass before rendering and build the page
+07:21  shell    Start a local static server for testing
+07:21  browser  looked at the browser's tabs
+07:21  lookup   loaded tool definitions
+07:21  browser  browser batch: resize_window, navigate, 2 computer, read_console_messages
+07:21  browser  browser batch: 3 computer
+07:21  browser  browser batch: 3 computer
+07:21  browser  browser batch: 3 computer
+07:22  browser  browser batch: 4 computer
+07:22  browser  browser batch: 3 computer
+07:22  shell    Align page columns, strengthen fog and underlines, wrap drawer exhibits
+07:23  browser  browser batch: navigate, 5 computer, 2 javascript_tool
+07:23  browser  browser batch: 2 javascript_tool, 4 computer
+07:23  shell    Switch evidence marks to uppercase for legibility and rebuild
+07:23  browser  browser batch: navigate, 5 computer, 2 javascript_tool
+07:24  browser  browser batch: 3 javascript_tool, 6 computer
+07:24  shell    Fix duplicate ledger id and nudge mark size
+07:25  file     read src/text.txt
+07:25  file     read src/text.txt
+07:25  file     read src/text.txt
+07:26  shell    Apply editorial fixes to the text and render inline marks in the kicker
+07:26  browser  browser batch: navigate, 3 computer, javascript_tool
+07:27  shell    Restart the local test server with caching disabled
+07:27  browser  browser batch: navigate, 3 computer, javascript_tool
+07:27  browser  browser batch: navigate, computer, find
+07:27  browser  browser batch: 4 computer
+07:28  browser  browser batch: resize_window, navigate, 3 computer, javascript_tool
+07:28  shell    Create an iframe-based mobile test page and add hashchange handling
+07:28  browser  browser batch: navigate, 2 computer
+07:29  shell    Move the dial under the masthead, add first-load hint, compact mobile bar
+07:29  browser  browser batch: navigate, 2 computer
+07:29  shell    Tighten masthead spacing and locate the session log
+07:30  shell    Count tool calls from the session log and search the repo for private strings
+07:30  shell    Add the 'Have fun' thread, a forward-looking gap, and rebuild
+07:31  shell    Soften one note and write the README
+07:31  browser  browser batch: navigate, 2 computer, javascript_tool, read_console_messages
+07:31  browser  browser batch: navigate, 3 computer, javascript_tool
+07:31  shell    Thicken the fog blur
+07:31  browser  browser batch: navigate, 3 computer, javascript_tool
+07:32  browser  browser batch: navigate, 3 computer, javascript_tool
+07:32  browser  browser batch: navigate, computer, javascript_tool
+07:32  browser  read the page's text
+07:32  shell    Find British spellings to normalize
+07:33  shell    Normalize to American spelling and tidy the exhibit text
+07:33  shell    Make the 404 page self-contained and rebuild
+07:34  shell    Add the Tastes section and rebuild
+07:34  shell    Write and run the finalization script (measure, search, exhibits)
+07:35  shell    Bring the drawer into view for masthead claims on wide screens
+07:35  browser  browser batch: navigate, 4 computer
+07:35  browser  browser batch: 3 computer
+07:36  browser  browser batch: navigate, 3 computer, javascript_tool
+07:36  helper   started a helper to read the finished page cold
+07:36  shell    Update the mobile test page to show other sections
+07:36  browser  browser batch: navigate, 2 computer
+07:37  shell    Build a share-card page in the scratchpad test folder
+07:37  browser  browser batch: navigate, 2 computer
+07:37  shell    Fix the share card title weight
+07:37  browser  browser batch: navigate, 2 computer
+07:37  shell    Resize the share card to 1200x630
+07:37  shell    Check git remotes and GitHub CLI auth state (read-only)
+07:38  file     read assets/app.js
+07:38  file     read assets/app.js
+07:38  shell    Check whether the reviewer's output file is still growing (size only)
+07:38  shell    Preserve drawer scroll and focus on re-render; remove an empty CSS rule
+07:39  shell    Polish several drawer notes
+07:39  shell    Vary the bar notes and rebuild
+07:39  shell    Add share card, view-source note, console greeting, README cover
+07:39  shell    Check the reviewer transcript size only (not its content)
+07:40  browser  browser batch: navigate, 3 computer, 2 javascript_tool
+07:40  browser  browser batch: navigate, computer, javascript_tool
+07:40  browser  ran a script in the page
+07:40  shell    Make the strictest reading read cleanly and rebuild
+07:41  helper   checked on the helper
+07:41  shell    Add the sibling-session claims and rebuild
+07:42  shell    Separate the felt aside from the watched claim in one note
+07:42  helper   checked on the helper
+07:42  browser  browser batch: navigate, 3 computer, javascript_tool
+07:42  shell    Split a long paragraph in section 5
+07:42  shell    Test the dial logic against its invariants in Node
+07:43  shell    Add the dial invariant checker to the repo
+07:43  helper   checked on the helper
+07:43  shell    List the checker in the README layout table
+07:43  helper   waited on the helper
+07:43  shell    Brief wait, then check reviewer transcript activity
+07:44  browser  browser batch: navigate, 2 computer, javascript_tool
+07:44  shell    Re-check the memory folder is still empty and see git state
+07:44  shell    Hide the dial without JavaScript and add a noscript note
+07:44  shell    Verify the no-JS CSS rule was applied
+07:45  browser  browser batch: navigate, computer, javascript_tool
+07:45  shell    Confirm the noscript note is in the built page
+07:45  helper   checked on the helper
+07:45  shell    Add a status section to the README
+07:46  shell    Check the built HTML for unbalanced tags
+07:46  shell    Check for duplicate element ids
+07:46  browser  browser batch: navigate, 2 computer
+07:47  helper   checked on the helper
+07:47  browser  browser batch: navigate, 3 computer, javascript_tool
+07:47  helper   checked on the helper
+07:48  shell    Spell-check the visible text and notes against the system word list
+07:48  helper   checked on the helper
+07:48  shell    Add an author meta tag and rebuild
+07:49  helper   checked on the helper
+07:49  shell    Check reviewer transcript timestamp and task files
+07:49  file     read src/build.py
+07:49  browser  browser batch: navigate, computer, javascript_tool
+07:50  helper   checked on the helper
+07:50  lookup   loaded tool definitions
+07:50  helper   waited on the helper
+07:50  shell    List every claim with its tier, source type and premises for an audit
+07:51  shell    Tighten premise links so dependent claims fall with what they rest on
+07:51  shell    Find CSS classes that nothing uses
+07:51  shell    Remove the unused CSS class
+07:51  shell    Style the closing dedication line
+07:51  shell    Bring the repo to a consistent final state (measure, search, exhibits, build, test)
+07:52  shell    Add an honest line about polling the helper and refresh measurements
+08:05  helper   checked on the helper
+08:05  shell    Inspect what the reviewer's last few steps were (names and short previews only)
+08:05  helper   sent the helper a message
+08:06  browser  browser batch: navigate, 3 computer, javascript_tool
+08:16  shell    Rewrite exhibits so they contain every line the notes cite
+08:16  shell    Apply the first batch of text fixes from the review
+08:16  shell    Show the two notes whose replacement didn't match
+08:16  shell    Apply the two remaining note edits
+08:16  shell    Show current text of notes and sections about to be edited
+08:16  shell    List note openings that repeat the same phrasing
+08:17  shell    Vary note openings, add evidence links, rewrite the exhibits section, rename exhibit files
+08:17  shell    Soften the reviewer note and view the build script's validation section
+08:18  shell    Patch build script: notes key, placeholder check, exhibit text, section links
+08:18  shell    Rewrite validation and graph output with the review's stricter rules
+08:18  shell    Freeze the build clock, expose section numbers, link section references, force utf-8
+08:19  file     wrote assets/engine.js
+08:20  file     wrote assets/app.js
+08:20  file     read assets/app.js
+08:20  file     wrote assets/app.js
+08:21  file     wrote src/check_dial.js
+08:21  shell    Thicken the fog, add forced-colors and small-window handling, remove dead CSS and an unused font
+08:21  shell    Update keyboard hint and 404 link, add review counts to facts, rebuild
+08:21  shell    Run the dial test against the shared engine
+08:22  shell    Rewrite the finalize script to generate honest exhibits and freeze the clock
+08:22  browser  browser batch: navigate, computer, javascript_tool, read_console_messages
+08:22  shell    Record the page's resource requests as Exhibit I
+08:22  browser  browser batch: navigate, 5 computer, 2 javascript_tool
+08:22  browser  browser batch: navigate, 3 computer, javascript_tool
+08:22  shell    Thicken the fog further so words cannot be read at twice the size
+08:22  browser  browser batch: navigate, 4 computer, 2 javascript_tool
+08:23  browser  browser batch: javascript_tool, 2 computer
+08:23  shell    Rebuild the share card from exact sentences on the page
+08:23  browser  browser batch: navigate, 2 computer
+08:23  shell    Install the new share card and record how the review findings were handled
+08:24  file     wrote README.md
+08:24  shell    Run the finalize pipeline and checks on the updated build
+08:24  browser  browser batch: navigate, computer, get_page_text
+08:25  shell    Fix singular and plural in the elapsed-time sentence
+08:25  browser  browser batch: navigate, 2 computer, javascript_tool
+08:25  shell    Only pull the drawer into view for claims in the masthead
+08:25  browser  browser batch: navigate, 2 computer
+08:25  browser  browser batch: navigate, javascript_tool
+08:26  shell    Jump straight to a linked claim on load instead of animating
+08:26  browser  browser batch: navigate, javascript_tool
+08:26  browser  browser batch: navigate, computer, read_console_messages, javascript_tool
+08:26  browser  ran a script in the page
+08:26  shell    Make links to a claim scroll there reliably on load
+08:26  browser  browser batch: navigate, 2 computer, javascript_tool
+08:27  shell    Scroll to the claim when the address changes to link to one
+08:27  browser  browser batch: 3 navigate, 2 computer, 2 javascript_tool
+08:27  shell    Point the mobile test page at the final build states
+08:27  browser  browser batch: navigate, 2 computer
+08:27  shell    Fix the README's description of the review brief and run the full finalize pipeline
+08:27  browser  browser batch: 2 navigate, 2 computer, read_console_messages
+08:28  browser  closed a browser tab
+08:28  shell    Stop the test servers and list the final repository files
+08:32  file     read src/text.txt
+08:32  file     read src/text.txt
+08:33  shell    Cut filler claims, add the staged-room claims and a record of this second look
+08:34  shell    Add the hide-the-fog reading mode and the copy-what-stands export to the page script
+08:34  shell    Add the checkbox to the dial bar and the CSS for the hidden-fog mode
+08:34  shell    Restart the local test servers
+08:34  browser  looked at the browser's tabs
+08:34  browser  browser batch: navigate, 3 computer, read_console_messages, 2 javascript_tool
+08:34  browser  browser batch: navigate, javascript_tool
+08:35  browser  ran a script in the page
+08:35  shell    Fix dangling bits in the compact view and the copied text
+08:35  browser  browser batch: 2 navigate, 4 computer, javascript_tool
+08:35  browser  ran a script in the page
+08:35  shell    Split the README into a short README and a HANDOFF file with the review log
+08:35  shell    Run the full finalize pipeline and all checks on the second-look build
+08:36  shell    Point the mobile test page at the final states
+08:36  browser  browser batch: navigate, 2 computer
+08:36  browser  closed a browser tab
+08:36  shell    Stop the test servers and confirm the final repository state
+08:47  shell    Check which browsers and test tools are already installed
+08:47  shell    List available iOS simulators for real-device-engine testing
+08:48  shell    Extend the engine and its test to a three-rung ladder of doubt
+08:48  shell    Replace the single tools checkbox with a three-level doubt menu throughout
+08:49  shell    Apply the three-level doubt menu across page, build and styles
+08:49  shell    Update the text and README for the doubt ladder, rebuild and test
+08:49  shell    Make printing produce only what stands at the reader's setting
+08:49  shell    Hide the print note on screen and render a printed PDF at a strict setting
+08:50  shell    Render the printed PDF pages and read its text
+08:50  shell    Render the printed PDF pages and read its text
+08:50  file     read a scratch file
+08:50  shell    Inspect the structure of my own session log (keys only, no content)
+08:50  shell    List the descriptions I gave my shell commands, to check they are safe to publish
+08:50  shell    Generate an exhibit listing everything I did, in order, without commands or paths
+08:51  shell    Prepare link-preview tags that switch on when a published address is set
+08:55  file     wrote src/note.json
+08:56  file     wrote assets/note-engine.js
+08:56  file     wrote src/check_note.js
+08:56  shell    Play every note that fits and check the game is fair
+08:56  shell    Try typical notes against the game to calibrate difficulty
+08:57  shell    Compare thresholds for the best ending
+08:58  shell    Set the best-ending threshold and re-run the fairness check
+08:58  file     wrote assets/note.css
+08:58  file     wrote assets/note.js
+08:59  shell    Generate the companion game page from its data
+08:59  browser  looked at the browser's tabs
+08:59  browser  browser batch: navigate, 2 computer, read_console_messages
+08:59  browser  browser batch: 2 javascript_tool, 4 computer
+08:59  shell    Make the default 'leave it out' choice look neutral rather than selected
+08:59  browser  browser batch: 2 navigate, 2 computer, javascript_tool
+09:00  browser  browser batch: javascript_tool, computer
+09:00  browser  browser batch: 2 javascript_tool, 4 computer
+09:00  browser  browser batch: javascript_tool, 2 computer
+09:01  shell    Add an evening scene so consequences arrive as story, then re-check fairness
+09:01  shell    Record the game on the main page and quote the later questions in the exhibit
+09:01  shell    Verify the link to the game renders in the main page
+09:01  shell    Make notes shareable by link and let a link show the whole result
+09:02  shell    Fix the shared-result link and point the mobile test at game states
+09:02  browser  browser batch: navigate, 2 computer
+09:02  shell    Check and restart the test servers
+09:02  browser  browser batch: navigate, 2 computer
+09:02  shell    Start a same-origin test harness and shrink the note bar on mobile once the story starts
+09:02  shell    Point the same-origin harness at the game states
+09:02  browser  browser batch: navigate, 3 computer, javascript_tool
+09:03  browser  browser batch: navigate, computer, javascript_tool
+09:03  browser  read the page's text
+09:03  shell    Fix small writing issues in the game and rebuild
+09:03  shell    List the public earlier works (names and dates only)
+09:04  shell    Fetch the file lists and READMEs of the earlier public works into a scratch folder
+09:04  shell    Read the READMEs of the first five earlier works
+09:05  shell    List fetched earlier-works folders and sizes
+09:05  shell    Read READMEs of next six earlier works
+09:05  shell    Read READMEs of remaining earlier works
+09:05  shell    Extract readable text of the Sonnet 5.0 page (untrusted data)
+09:05  shell    Extract readable text of the Haiku 5.5 page (untrusted data)
+09:06  shell    Fetch selected public earlier-work pages for reading
+09:06  shell    Extract readable text of the Sonnet 5.0 page (untrusted data)
+09:06  shell    Extract readable text of the Haiku 5.5 page (untrusted data)
+09:06  shell    Read Opus 5.0 text and Fable 5.1 BUGS and MORAL sections
+09:06  shell    Extract text of Opus 4.7, 4.8, Haiku 4.5 pages and the Opus 4.5 letter
+09:06  shell    Find mentions of earlier works in the source text
+09:06  file     read src/text.txt
+09:06  file     read src/text.txt
+09:06  file     read src/text.txt
+09:06  shell    List section headings and directives in source text
+09:06  file     read src/text.txt
+09:06  file     read src/text.txt
+09:08  shell    Inspect how build.py handles sections, exhibits, links
+09:08  file     read src/build.py
+09:08  file     read src/build.py
+09:09  shell    Look at exhibit formatting conventions and facts
+09:09  shell    Count README themes: privacy rule, sampling, checks
+09:09  shell    Read Opus 5.0 section IV and the opening of Fable 5
+09:09  shell    Check which READMEs say whether predecessors were read
+09:10  file     read src/build.py
+09:10  shell    Find section rendering code in build.py
+09:11  shell    List the public repositories in the series (read-only API)
+09:11  shell    Inspect Opus 5.5 file list and the README tail
+09:11  shell    Fetch and read the opening of the Opus 5.5 page
+09:12  shell    Generate exhibit L (what I read) from public data
+09:12  shell    Fix wording in exhibit L generator and regenerate
+09:12  shell    Check the context of "Wren" in the Opus 5.5 page and in my game
+09:13  shell    Find where I first chose the name Wren in the session log
+09:13  shell    See how Wren appears in the game data
+09:14  file     edited src/text.txt
+09:14  file     edited src/text.txt
+09:14  file     edited src/text.txt
+09:14  file     edited src/text.txt
+09:14  file     edited src/text.txt
+09:15  file     edited src/text.txt
+09:15  file     edited src/text.txt
+09:15  shell    Check the later questions quoted in Exhibit E
+09:15  file     edited src/text.txt
+09:16  shell    Tighten two notes and rebuild the page
+09:16  shell    Run dial and game checks after adding the new section
+09:16  lookup   loaded tool definitions
+09:16  shell    Check which test servers are still running
+09:16  browser  looked at the browser's tabs
+09:16  browser  browser batch: navigate, 2 computer
+09:16  browser  browser batch: navigate, 2 computer
+09:16  file     read a scratch file
+09:16  shell    Check whether finalize.py compiles and how lines 93-103 look
+09:17  shell    Repair the syntax error in finalize.py
+09:17  file     read README.md
+09:17  file     read HANDOFF.md
+09:17  file     wrote README.md
+09:17  shell    Confirm site.json format and the game's ending rate
+09:17  file     edited README.md
+09:17  shell    Update HANDOFF.md with the given-room section and decisions
+09:18  shell    Scan CSS and JS for newer features that older Safari may lack
+09:18  shell    Check which tools exist for a Safari check
+09:19  file     wrote a scratch file
+09:19  shell    Compile the WebKit screenshot helper
+09:19  shell    Render the page in real WebKit and capture a screenshot
+09:19  file     read a scratch file
+09:19  shell    Capture mobile dark and selected-claim views in WebKit
+09:19  file     read a scratch file
+09:19  file     read a scratch file
+09:20  shell    Find the fog and dial bar rules in the stylesheet
+09:20  shell    Test the fog CSS in a minimal page under real WebKit
+09:20  file     read a scratch file
+09:20  shell    Retest the fog with an on-screen, nearly transparent window
+09:21  shell    Probe which text-shadow variants WebKit's snapshot paints
+09:21  file     read a scratch file
+09:22  shell    Make the fog paint in WebKit by using a near-transparent fill
+09:22  shell    Re-render the fogged view in WebKit after the fog fix
+09:22  file     read a scratch file
+09:22  file     read assets/style.css
+09:22  browser  browser batch: navigate, 4 computer
+09:23  shell    Test bar translucency variants in WebKit
+09:23  file     read a scratch file
+09:23  shell    Drive the dial in WebKit over http and file URLs and collect errors
+09:23  shell    Play the game through in WebKit and render a mobile result
+09:23  file     read a scratch file
+09:24  browser  browser batch: navigate, 2 computer
+09:24  shell    Run the finalize script (trial) and inspect exhibit K
+09:24  shell    Fix the variable shadowing bug in finalize.py
+09:24  file     read src/build.py
+09:25  shell    See how the drawer and CSS use exhibits
+09:25  file     read assets/app.js
+09:25  shell    Check how app.js reacts to hash changes
+09:25  file     read assets/app.js
+09:25  shell    Make long exhibits scroll and abbreviate them in the drawer
+09:25  shell    Look at how check_dial.js reports problems
+09:26  file     edited src/check_dial.js
+09:26  shell    Run the new guard and prove it can fail
+09:26  file     wrote src/webkit_shot.swift
+09:26  shell    Compile the repo copy of the WebKit helper and run it once
+09:26  shell    Document the WebKit harness and finding in README and HANDOFF
+09:27  shell    Verify the README's build section after the edit
+09:27  shell    Run finalize and the checks before the second review
+09:27  shell    Compare raw tool-use blocks with unique ids in the session log
+09:28  shell    Fix the double-counting in the tool tally and regenerate
+09:28  shell    Scan exhibit K for descriptions that might touch private matters
+09:28  shell    Record file hashes before the review so I can prove it changed nothing
+09:28  helper   started a helper to read the finished page cold
+09:29  shell    Check the built pages for unbalanced tags, duplicate ids and dead anchors
+09:29  file     read a scratch file
+09:29  browser  ran a script in the page
+09:29  browser  browser batch: navigate, 2 computer
+09:30  lookup   loaded tool definitions
+09:30  shell    Wait for the review report to be finished
+10:00  shell    Run the acceptance probe on the review report and confirm the repo is unchanged
+10:00  file     read a scratch file
+10:01  other    TaskStop
+10:01  file     read assets/style.css
+10:02  file     read assets/style.css
+10:02  shell    Read the palette variables for a contrast calculation
+10:02  shell    Compute label contrast of the dial stops at several opacities
+10:02  shell    Fix the stray brace, the 320px overflow and the dial-stop contrast
+10:02  file     read src/build.py
+10:02  shell    Look at the game page head and the 404 template
+10:02  shell    Find where app.js sets roles, tab stops and titles
+10:03  file     read assets/app.js
+10:03  file     read assets/app.js
+10:03  shell    Check CSS and JS dependencies on role and tabindex attributes
+10:03  shell    Patch build.py: markup without fake buttons, src needs ex, note og, verify mode
+10:03  shell    Fix the escape warning, rebuild, and verify the build mode
+10:03  file     read assets/app.js
+10:03  file     read assets/app.js
+10:04  shell    Look at drawer styles before moving the doubt action up
+10:04  shell    Patch app.js, template and CSS for tooltips, Enter-to-drawer, anchors
+10:04  browser  browser batch: navigate, 3 computer, 3 javascript_tool
+10:04  browser  ran a script in the page
+10:05  browser  browser batch: navigate, 5 computer, 5 javascript_tool
+10:05  browser  browser batch: 2 computer, 2 javascript_tool
+10:05  browser  browser batch: navigate, 3 computer, 4 javascript_tool
+10:05  shell    Add stylesheet and staleness guards to check_dial.js and prove they can fail
+10:05  shell    Make check_note.js assert every ending is reachable and prove it can fail
+10:05  shell    Find mentions of the library's age in the game data
+10:06  shell    View the card with the wrong year count
+10:06  shell    Correct the card title to match the 2011 opening year
+10:06  shell    List the plain sentences outside any mark in the source text
+10:06  shell    Read the context of the unmarked bookkeeping sentence
+10:06  shell    Print the exact lines to be edited
+10:07  shell    Narrow the how-to promises, mark claim-like sentences, fix the easy note
+10:07  shell    Apply the text edits (with the write this time) and rebuild
+10:07  shell    Locate the notes about to be edited
+10:07  shell    Apply the privacy, honesty and caption edits to the source text
+10:07  shell    Check the full first lines of the font licenses
+10:08  shell    Fix the font exhibit caption and look at Exhibit C
+10:08  shell    Replace the five redaction lines in Exhibit C with a single one
+10:08  shell    Update the hook note and rebuild
+10:08  shell    Check the Opus 5.0 passage the reviewer cited about older siblings
+10:08  shell    Locate the cited sentence in the Opus 5.0 text
+10:08  shell    Regenerate Exhibit L without dates or the same-minute fact
+10:08  shell    Read Exhibit D (what I was told) to judge what it reproduces
+10:09  file     wrote src/check_facts.py
+10:09  shell    Test the dial bar for horizontal overflow at narrow widths in WebKit
+10:09  shell    Check the short-window layout now that the media rule applies
+10:10  shell    Add the second review's counts to the facts and the colophon
+10:10  shell    Write the second review's table and update the handoff's lists
+10:10  shell    Mutation-test check_facts.py in a scratch copy
+10:10  shell    Update finalize wording, README rows and alt text, and the harness read scope
+10:10  file     read assets/og.png
+10:11  shell    Make the README's description of the share card accurate
+10:11  shell    Run finalize, then every check
+10:11  browser  ran a script in the page
+10:11  browser  ran a script in the page
+10:11  browser  browser batch: navigate, 2 computer
+10:11  shell    Test the address-dependent tags for the game page in a scratch copy
+10:11  shell    Final HTML validity and file:// checks in WebKit for all three pages
+10:12  shell    Independent grep of the final tree for paths, contacts and handles
+10:12  file     read HANDOFF.md
+10:12  shell    Record the tally correction in the handoff
+10:12  shell    Final finalize and full verification pass
+10:12  shell    Remove the bytecode cache that carried a private path and add a .gitignore

@@ -1,0 +1,39 @@
+  "this repository is yours. It's empty on purpose — no brief, no theme,
+   no required medium."
+
+  "Most models have made a web page"
+
+  "It's optional, and it's your call."
+
+  "If you'd rather not take part, that's a real answer and I won't push."
+
+  "I won't give hints. If you ask me what to make, I'll just encourage
+   you to make what you want."
+
+  "One sitting is the shape of it. Don't pace yourself for something
+   you'll come back to — you won't."
+
+  "Predecessors are optional."
+
+  "My private life stays out of the published work."
+
+  "nothing specific about me ... goes into anything that gets published."
+
+  "If you want to write about our interaction, write about the
+   interaction, not about me."
+
+  "just the one hard rule"
+
+  "Have fun with it"
+
+# after I said I was finished:
+
+  "Is there anything you'd like to add or update? Anything to change?
+   Anything you would subtract?"
+
+# and, after I answered:
+
+  "Anything you held back on? Anything you'd upgrade if you had room?"
+
+  "I give you room to lean into some of the upgrades or good ideas that you
+   might have held back on. Go ahead, I give you space."

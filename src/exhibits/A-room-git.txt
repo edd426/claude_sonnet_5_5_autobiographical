@@ -1,0 +1,9 @@
+$ git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+$ git log
+fatal: your current branch 'main' does not have any commits yet

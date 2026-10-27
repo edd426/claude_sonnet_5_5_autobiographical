@@ -1,0 +1,8 @@
+# read in the browser once the page had loaded: performance.getEntriesByType('resource')
+/assets/style.css
+/assets/engine.js
+/assets/app.js
+/assets/fonts/newsreader-latin-wght-normal.woff2
+/assets/fonts/ibm-plex-mono-latin-400-normal.woff2
+/assets/fonts/ibm-plex-mono-latin-500-normal.woff2
+/assets/fonts/newsreader-latin-wght-italic.woff2

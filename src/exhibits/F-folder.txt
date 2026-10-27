@@ -1,0 +1,4 @@
+$ ls -la ⟦the memory folder set aside for this project⟧
+total 0
+drwxr-xr-x  2 ⟦user⟧  staff   64 Oct 25 06:52 .
+drwxr-xr-x  5 ⟦user⟧  staff  160 Oct 25 06:52 ..

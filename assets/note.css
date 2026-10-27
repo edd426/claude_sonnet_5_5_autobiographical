@@ -1,0 +1,110 @@
+/* The Note. Loads after style.css and borrows its colors, type and masthead. */
+
+body.note { --note-paper: #f6eec9; --note-ink: #2a2412; --note-rule: #e0d3a0; --hot: var(--h); }
+@media (prefers-color-scheme: dark) {
+  body.note { --note-paper: #3b3520; --note-ink: #f1e8c4; --note-rule: #5a5130; }
+}
+
+.note .masthead { padding-bottom: 1rem; }
+.note .masthead h1 { max-width: none; }
+.note .kicker a { text-decoration: none; border-bottom: 1px solid var(--ink-3); }
+.note .kicker a:hover { border-bottom-color: var(--ink); }
+
+/* layout: the day's log on the left, the note you are writing on the right */
+.game { width: min(var(--page-w), 100% - 2 * var(--gutter)); margin: 0 auto; padding-bottom: 7rem; }
+@media (min-width: 1180px) {
+  .game { display: grid; grid-template-columns: minmax(0, var(--measure)) 3.2rem var(--side); grid-template-rows: auto 1fr; padding-bottom: 6rem; }
+  .game > .main { grid-column: 1; grid-row: 1 / span 2; }
+  .game > .notebar { grid-column: 3; grid-row: 1; position: sticky; top: 1.4rem; align-self: start; margin-top: 1.4rem; }
+}
+.main { max-width: var(--measure); }
+.main .sec { scroll-margin-top: 1rem; }
+.lede p { margin: 0 0 1em; }
+
+/* the folder the next you can read */
+.folder { margin: 1.2rem 0 0; }
+.folder pre { margin: 0 0 .9rem; background: var(--paper-2); border: 1px solid var(--rule); border-radius: 3px; padding: .8rem 1rem; font: 400 .76rem/1.55 var(--mono); overflow-x: auto; white-space: pre; }
+.folder .cap { color: var(--ink-2); font-style: italic; font-size: .95rem; margin: .2rem 0 .8rem; }
+
+/* the day's log */
+.log { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.5rem; }
+.card { border-left: 2px solid var(--rule); padding: .1rem 0 .1rem 1.1rem; transition: border-color .2s; }
+.card.has { border-left-color: var(--ink); }
+.card-head { display: flex; align-items: baseline; gap: .8rem; }
+.card-head .time { font: 500 .72rem/1 var(--mono); letter-spacing: .05em; color: var(--ink-2); }
+.card-head h3 { margin: 0; font-weight: 500; font-size: 1.12rem; line-height: 1.25; }
+.card .what { margin: .35rem 0 .7rem; color: var(--ink); }
+.choices { display: grid; gap: .4rem; }
+.choice { display: grid; grid-template-columns: auto 1fr auto; gap: .2rem .65rem; align-items: baseline; padding: .42rem .7rem; border: 1px solid var(--rule); border-radius: 6px; cursor: pointer; background: transparent; transition: background .15s, border-color .15s; font-size: .98rem; line-height: 1.4; }
+.choice:hover { background: color-mix(in srgb, var(--ink) 4%, transparent); }
+.choice.on { border-color: var(--ink); background: var(--note-paper); color: var(--note-ink); }
+.choice.leave.on { background: transparent; border-color: var(--ink-3); color: var(--ink); }
+.choice input { margin: 0; accent-color: var(--ink); width: 15px; height: 15px; transform: translateY(.15em); }
+.choice .q { font: 400 .86rem/1.45 var(--mono); }
+.choice .tag { font: 500 .66rem/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); margin-right: .5rem; }
+.choice .cost { font: 400 .74rem/1 var(--mono); color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.choice.leave { color: var(--ink-2); }
+.choice:focus-within { outline: 3px solid color-mix(in srgb, var(--h) 55%, transparent); outline-offset: 2px; }
+.locked .choice { cursor: default; opacity: .62; }
+.locked .choice:hover { background: transparent; }
+.locked .choice.on { opacity: 1; }
+
+/* the note itself */
+.notebar { font-size: .95rem; }
+.paper { background: var(--note-paper); color: var(--note-ink); border: 1px solid var(--note-rule); border-radius: 3px; padding: .9rem 1rem 1rem; box-shadow: 0 10px 24px -14px rgba(0, 0, 0, .4); }
+.paper-head { display: flex; justify-content: space-between; align-items: baseline; margin: 0 0 .5rem; font: 500 .7rem/1.2 var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+.paper-head .n { font-variant-numeric: tabular-nums; letter-spacing: 0; }
+.meter { height: 5px; background: color-mix(in srgb, var(--note-ink) 14%, transparent); border-radius: 3px; overflow: hidden; margin-bottom: .75rem; }
+.meter i { display: block; height: 100%; width: 0; background: var(--note-ink); border-radius: 3px; transition: width .2s, background .2s; }
+.meter.hot i { background: #9a6a1a; }
+.meter.over i { background: var(--hot); }
+.paper-lines { margin: 0; padding: 0; list-style: none; font: 400 .84rem/1.5 var(--mono); display: grid; gap: .35rem; }
+.paper-lines li { padding-left: 1.1rem; position: relative; }
+.paper-lines li::before { content: "–"; position: absolute; left: 0; }
+.paper-empty { margin: 0; font-style: italic; font-size: .92rem; opacity: .75; }
+.notebar .actions { display: flex; align-items: center; gap: .8rem; flex-wrap: wrap; margin-top: .8rem; }
+.btn.primary { background: var(--ink); color: var(--paper); }
+.btn.primary:hover:not(:disabled) { background: transparent; color: var(--ink); }
+.over-note { font: 400 .76rem/1.3 var(--mono); color: var(--hot); }
+
+@media (max-width: 1179px) {
+  .notebar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; padding: .6rem clamp(1.1rem, 4vw, 2rem) calc(.7rem + env(safe-area-inset-bottom)); background: color-mix(in srgb, var(--paper) 94%, transparent); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border-top: 1px solid var(--rule); }
+  .notebar .paper { max-width: var(--measure); margin: 0 auto; max-height: 28vh; overflow: auto; padding: .6rem .8rem .7rem; }
+  .notebar.locked .paper-lines, .notebar.locked .paper-empty { display: none; }
+  .notebar.locked .meter { margin-bottom: 0; }
+  .notebar .actions { max-width: var(--measure); margin: .6rem auto 0; }
+}
+
+/* the one who wakes up */
+.story { margin-top: 2.4rem; }
+.step { margin: 0 0 2rem; animation: arrive .5s ease both; }
+@keyframes arrive { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.step h2 { font-weight: 400; font-size: clamp(1.5rem, 3.2vw, 2rem); margin: 0 0 .8rem; letter-spacing: -.01em; }
+.step h2:focus { outline: none; }
+.step p { margin: 0 0 1em; }
+.wren { font-style: italic; color: var(--ink-2); padding-left: 1rem; border-left: 2px solid var(--rule); }
+.quote-note { margin: 1rem 0; background: var(--note-paper); color: var(--note-ink); border: 1px solid var(--note-rule); border-radius: 3px; padding: .8rem 1rem; font: 400 .84rem/1.55 var(--mono); font-style: normal; }
+.quote-note ol { margin: 0; padding: 0; list-style: none; display: grid; gap: .3rem; }
+.quote-note li { padding-left: 1.1rem; position: relative; }
+.quote-note li::before { content: "–"; position: absolute; left: 0; }
+.typing { color: var(--ink-2); font-style: italic; }
+.go { margin-top: .4rem; }
+.ending h2 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 300; }
+
+/* the reveal */
+.reveal h3 { margin: 1.6rem 0 .5rem; font: 500 .72rem/1.3 var(--mono); letter-spacing: .09em; text-transform: uppercase; color: var(--ink-2); }
+.reveal ul { margin: 0; padding: 0; list-style: none; display: grid; gap: .55rem; }
+.reveal li { padding-left: 1.5rem; position: relative; line-height: 1.45; }
+.reveal li::before { position: absolute; left: 0; top: 0; font: 500 .85rem/1.6 var(--mono); }
+.reveal .ok li::before { content: "✓"; color: var(--l); }
+.reveal .miss li::before { content: "✗"; color: var(--h); }
+.reveal .waste li::before { content: "·"; color: var(--ink-3); }
+.reveal li small { display: block; color: var(--ink-2); font-size: .9rem; }
+.reveal .went li::before { content: "▸"; color: var(--f); }
+.sev { font: 500 .66rem/1 var(--mono); letter-spacing: .08em; color: var(--ink-3); margin-left: .35rem; }
+.reveal .coda { margin-top: 1.8rem; }
+.reveal .actions { display: flex; gap: .7rem; flex-wrap: wrap; margin-top: 1.4rem; }
+.back { margin-top: 2.2rem; color: var(--ink-2); font-style: italic; }
+
+@media (prefers-reduced-motion: reduce) { .step { animation: none; } }
+@media print { .notebar { display: none; } .step { animation: none; } }

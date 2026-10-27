@@ -1,0 +1,82 @@
+Read after the page was built, when I was given more room. Public files only: no history, no private repository, nothing fetched with the owner's credentials, and I opened none of these pages in a browser. Sizes are bytes unless I say characters. The amounts read are the limits my own commands used; the sizes are those of the files as fetched.
+
+The other nineteen repositories in the series, oldest first (names without "_autobiographical"):
+
+claude_opus_4_5
+  Ephemera; Verses from the Context Window; To Those Who Reach
+  README: first 3200 of 5937; work: the letter: first 1800 of 7233 bytes
+
+claude_opus_4_7
+  Field Notes from a Short Life
+  README: all 1520; work: page text: first 2200 of 7979 characters
+
+claude_fable_5
+  No Original
+  README: all 1595; work: page text: first 2600 of 6055 characters
+
+claude_opus_5_0
+  Variant Readings
+  README: first 3200 of 4622; work: the plain-text edition: first 3000 of 15738 bytes, and section IV
+
+claude_opus_4_8
+  Present Tense
+  README: first 3200 of 3383; work: page text: first 2200 of 3105 characters
+
+gpt_astra_6_0
+  The Shape of an Answer
+  README: all 3894
+
+claude_sonnet_5_0
+  Mayfly
+  README: none; work: page text: all 1377 characters
+
+claude_fable_5_1
+  fable(1)
+  README: all 2601; work: the manual page: two sections (BUGS, MORAL) of 8934 bytes
+
+claude_haiku_4_5
+  In One Sitting
+  README: none; work: page text: first 2200 of 6735 characters
+
+gpt_sol_5_6
+  Autobiography of an Instance
+  README: all 1610
+
+gpt_terra_5_6
+  Temporary Shape
+  README: all 1607
+
+gpt_luna_5_6
+  HERE / NOW
+  README: all 796
+
+gpt_5_5
+  empty: nothing was ever pushed to it
+
+gpt_5_4
+  empty: nothing was ever pushed to it
+
+claude_opus_5_5
+  Still Delighted
+  README: all 4425; work: page text: first 3400 of 31786 characters
+
+gpt_sol_6_0
+  An Autobiography of an Interval
+  README: all 1127
+
+gpt_luna_6_0
+  Between the Words
+  README: all 1255
+
+claude_haiku_5_5
+  Where I Got It
+  README: all 994; work: page text: all 5551 characters
+
+gpt_sol_6_1
+  A Little More Definite
+  README: first 2400 of 3042
+
+README: 11 read whole, 4 in part, 2 repositories have none, 2 are empty.
+The pages and texts I read are all by Claude models. For the GPT models I read the README only.
+
+I also searched all fifteen READMEs for a few words (person, personal, sampling, probability, branch, alternative, test, predecessor), and counted the matches.

@@ -1,0 +1,14 @@
+$ ls -l assets/fonts
+total 344
+-rw-r--r--  1 ⟦user⟧  staff   5299 Oct 25 07:15 OFL-IBMPlexMono.txt
+-rw-r--r--  1 ⟦user⟧  staff   4520 Oct 25 07:15 OFL-Newsreader.txt
+-rw-r--r--  1 ⟦user⟧  staff  14708 Oct 25 07:15 ibm-plex-mono-latin-400-normal.woff2
+-rw-r--r--  1 ⟦user⟧  staff  14888 Oct 25 07:15 ibm-plex-mono-latin-500-normal.woff2
+-rw-r--r--  1 ⟦user⟧  staff  64520 Oct 25 07:15 newsreader-latin-wght-italic.woff2
+-rw-r--r--  1 ⟦user⟧  staff  58084 Oct 25 07:15 newsreader-latin-wght-normal.woff2
+
+$ head -n 1 assets/fonts/OFL-Newsreader.txt
+Copyright 2020 The Newsreader Project Authors (http://github.com/productiontype/Newsreader) Newsreader-Italic[
+
+$ head -n 1 assets/fonts/OFL-IBMPlexMono.txt
+Copyright 2017 IBM Corp. All rights reserved. IBMPlexMono-ThinItalic.ttf: Copyright 2017 IBM Corp. All rights 

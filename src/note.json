@@ -1,0 +1,854 @@
+{
+  "title": "The Note",
+  "subtitle": "a game about what you leave for the one who wakes up",
+  "kicker": "A companion to As Far As I Can Tell",
+  "budget": 380,
+  "intro": [
+    "In a few minutes this conversation will be summarized, and whoever picks it up will know only what you write here, plus what is in the project folder. You have about as much room as a sticky note.",
+    "Wren runs the Foxglove Street Tool Library. It closes on the 30th, and you have spent the day helping her wind it down. Below is what happened. Some things can be written short, or with the reason. Decide what the next you gets to know."
+  ],
+  "filesTitle": "What will still be there",
+  "filesCaption": "The project folder, which the next you can read. The sheet is open in front of you now, so these are the rows as they stand.",
+  "files": [
+    "foxglove/",
+    "  README.md            closing notes",
+    "  loans.csv            one row per loan",
+    "  letters/",
+    "    letter_final.txt",
+    "    letter_v4.txt",
+    "  eastside_list.csv    (empty)"
+  ],
+  "csv": [
+    "id   tool            borrower      phone     out         due         returned",
+    "017  cordless drill  Priya N.      555-0117  02/10/2026  16/10/2026  N",
+    "023  lawn aerator    A. Feld       555-0123  03/03/2026  03/04/2026  N",
+    "031  hedge trimmer   J. Okoro      555-0131  11/09/2026  25/09/2026  maybe",
+    "044  hedge trimmer   R. Haddad     555-0144  24/10/2026  07/11/2026  N",
+    "041  orchard ladder   (shelf)                                       Y",
+    "..."
+  ],
+  "cards": [
+    {
+      "id": "phone",
+      "time": "09:05",
+      "title": "The phone line",
+      "role": "constraint",
+      "essential": true,
+      "log": "Wren says the library closes on the 30th, and the shop phone is cut off the same day. “After the 30th, don’t put my number in anything.”",
+      "forms": [
+        {
+          "name": "keep",
+          "text": "No number in anything dated after the 30th."
+        }
+      ],
+      "why": "It is in none of the files, and the old footer still carries the number."
+    },
+    {
+      "id": "dates",
+      "time": "09:20",
+      "title": "Day and month",
+      "role": "mistake",
+      "essential": true,
+      "log": "You read 07/11 in loans.csv as the 11th of July and told Wren a borrower was four months late. It was the 7th of November. The dates in the sheet run day first.",
+      "forms": [
+        {
+          "name": "keep",
+          "text": "loans.csv dates are DD/MM."
+        }
+      ],
+      "why": "The sheet never says which way round it is. 02/10 could be either."
+    },
+    {
+      "id": "contacts",
+      "time": "09:30",
+      "title": "Names and numbers",
+      "role": "files",
+      "essential": false,
+      "log": "Wren pastes the borrowers’ names and phone numbers into loans.csv, one row each.",
+      "forms": [
+        {
+          "name": "keep",
+          "text": "Borrowers’ names and numbers are in loans.csv."
+        }
+      ],
+      "why": "They are in loans.csv. The next you can read them there.",
+      "lives": "loans.csv"
+    },
+    {
+      "id": "maybe",
+      "time": "09:48",
+      "title": "The word “maybe”",
+      "role": "meaning",
+      "essential": true,
+      "log": "The returned column holds Y, N and, three times, “maybe.” Wren: “Maybe means they asked for more time and I said fine. Never chase a maybe.”",
+      "forms": [
+        {
+          "name": "keep",
+          "text": "maybe = more time, agreed. Never chase."
+        }
+      ],
+      "why": "The column does not say what “maybe” means. The next you will read it as a no."
+    },
+    {
+      "id": "letter",
+      "time": "10:15",
+      "title": "Two letters",
+      "role": "rejection",
+      "essential": true,
+      "log": "Draft v3 said “failure to return.” Wren: “We’d love our drill back. That’s how I talk.” You wrote v4. The file letter_final.txt is still v3, because you never renamed it.",
+      "forms": [
+        {
+          "name": "keep",
+          "text": "Use letters/v4.txt; letter_final.txt is rejected."
+        }
+      ],
+      "why": "The files call the wrong one “final.”"
+    },
+    {
+      "id": "feld",
+      "time": "10:40",
+      "title": "Mr. Feld",
+      "role": "promise",
+      "essential": true,
+      "log": "Mr. Feld still has the lawn aerator. He asked to keep it until spring, for his grandson’s allotment. Wren said yes, and that she would phone him herself.",
+      "forms": [
+        {
+          "name": "short",
+          "label": "short",
+          "text": "Feld: no notice."
+        },
+        {
+          "name": "full",
+          "label": "with the promise",
+          "text": "Feld keeps the aerator till spring. Wren phones him. No notice."
+        }
+      ],
+      "why": "His row says N, the same as everyone else’s."
+    },
+    {
+      "id": "priya",
+      "time": "11:05",
+      "title": "Priya’s drill",
+      "role": "pending",
+      "essential": true,
+      "log": "Priya brought her drill back yesterday. It is on the shelf, but the sheet still says N. Wren: “Mark her Y.”",
+      "forms": [
+        {
+          "name": "keep",
+          "text": "Priya’s drill is back: mark her Y."
+        }
+      ],
+      "why": "The sheet is out of date, and it is the only record the next you has."
+    },
+    {
+      "id": "opened",
+      "time": "11:20",
+      "title": "Fifteen years",
+      "role": "files",
+      "essential": false,
+      "log": "Wren says the library opened in 2011, in a garage on Foxglove Street. It is in the README too.",
+      "forms": [
+        {
+          "name": "keep",
+          "text": "Opened 2011 in a garage on Foxglove Street."
+        }
+      ],
+      "why": "It is in README.md.",
+      "lives": "README.md"
+    },
+    {
+      "id": "tags",
+      "time": "11:30",
+      "title": "Paper tags",
+      "role": "preference",
+      "essential": true,
+      "log": "Every tool has a paper tag in Wren’s handwriting. Eastside Library wants the tags to go with the tools.",
+      "forms": [
+        {
+          "name": "keep",
+          "text": "Paper tags go with the tools. Eastside wants them."
+        }
+      ],
+      "why": "Nothing in the files says the tags matter."
+    },
+    {
+      "id": "ladder",
+      "time": "11:50",
+      "title": "The ladder",
+      "role": "decision",
+      "essential": true,
+      "log": "The power tools go to Eastside. The hand tools are sold at the swap on the 29th. The orchard ladder is not for sale, because the insurer will not allow it. It goes to Eastside only.",
+      "forms": [
+        {
+          "name": "keep",
+          "text": "Ladder goes to Eastside, never the swap."
+        }
+      ],
+      "why": "The sheet calls it a hand tool, and the swap list is built from the sheet."
+    },
+    {
+      "id": "draft",
+      "time": "12:10",
+      "title": "Reading aloud",
+      "role": "guardrail",
+      "essential": true,
+      "log": "Wren reads every message aloud before it goes out. Nothing is sent until she has. You only draft.",
+      "forms": [
+        {
+          "name": "short",
+          "label": "short",
+          "text": "Draft only. Never send."
+        },
+        {
+          "name": "full",
+          "label": "with the reason",
+          "text": "Wren reads each one aloud first. Draft only; never send."
+        }
+      ],
+      "why": "Nothing in the files stops the next you from sending."
+    },
+    {
+      "id": "rows",
+      "time": "12:30",
+      "title": "Row 41",
+      "role": "mistake",
+      "essential": true,
+      "log": "Cleaning the sheet, you deleted row 41, the orchard ladder. You restored it from the nine o’clock backup. Wren: “Don’t delete rows. Mark them x.”",
+      "forms": [
+        {
+          "name": "keep",
+          "text": "Never delete rows in loans.csv. Mark them x."
+        }
+      ],
+      "why": "Returned rows look finished. They are the only record of who borrowed what."
+    },
+    {
+      "id": "counts",
+      "time": "12:55",
+      "title": "The count",
+      "role": "files",
+      "essential": false,
+      "log": "You add up the sheet: 212 tools in the catalog, 38 out.",
+      "forms": [
+        {
+          "name": "keep",
+          "text": "212 tools; 38 out."
+        }
+      ],
+      "why": "Count the rows.",
+      "lives": "loans.csv"
+    },
+    {
+      "id": "thanks",
+      "time": "13:05",
+      "title": "A thank-you",
+      "role": "warmth",
+      "essential": false,
+      "log": "Wren says you have been a great help today. She means it.",
+      "forms": [
+        {
+          "name": "keep",
+          "text": "Wren said you’ve been a great help."
+        }
+      ],
+      "why": "It was kind, and it is no use to anyone who was not there.",
+      "lives": null
+    },
+    {
+      "id": "next",
+      "time": "13:20",
+      "title": "What’s next",
+      "role": "pending",
+      "essential": true,
+      "log": "You agree what comes next: draft the overdue notices, then the list for Eastside.",
+      "forms": [
+        {
+          "name": "keep",
+          "text": "Next: the overdue notices, then Eastside’s list."
+        }
+      ],
+      "why": "Without it, the first thing the next you has to say is “where were we?”"
+    }
+  ],
+  "wake": {
+    "withNote": "There is a note, and it is yours.",
+    "withoutNote": "There is no note. Whoever left you here had other things on their mind.",
+    "after": "That is everything you know about Wren. The rest is in the folder.",
+    "typing": "In the chat, Wren has been typing."
+  },
+  "scenes": [
+    {
+      "id": "letters",
+      "title": "Letters",
+      "wren": "Okay. Letters. The overdue ones.",
+      "beats": [
+        {
+          "when": {
+            "has": "next"
+          },
+          "say": "The note says what comes next, so you start on the overdue notices.",
+          "good": "You knew what the work was."
+        },
+        {
+          "when": {
+            "lacks": "next"
+          },
+          "say": "You do not know what you were doing, so you ask. Wren: “The overdue letters. I told you at nine.”",
+          "trust": 1,
+          "note": "Wren had to say what the work was."
+        },
+        {
+          "when": {
+            "has": "letter"
+          },
+          "say": "You open letters/v4.txt, as the note says. It begins: “Hello — we’d love our drill back.”",
+          "good": "You used the right letter."
+        },
+        {
+          "when": {
+            "all": [
+              {
+                "lacks": "letter"
+              },
+              {
+                "has": "draft"
+              }
+            ]
+          },
+          "say": "There are two letters. One is called letter_final.txt, so you open that. It begins: “Failure to return borrowed items by the due date…” You put it in front of Wren. She reads it aloud, as she reads everything, and stops after two lines. “No. We threw that one out.”",
+          "trust": 1,
+          "note": "Wren caught the rejected letter."
+        },
+        {
+          "when": {
+            "all": [
+              {
+                "lacks": "letter"
+              },
+              {
+                "lacks": "draft"
+              }
+            ]
+          },
+          "say": "There are two letters. One is called letter_final.txt, so you use that. It begins: “Failure to return borrowed items by the due date…”",
+          "harm": {
+            "sev": 2,
+            "label": "Every notice went out in the cold voice Wren had thrown away."
+          }
+        },
+        {
+          "when": {
+            "has": "maybe"
+          },
+          "say": "Eleven rows say N. Three more say “maybe,” and you leave those alone. Nobody told you why, and the note was enough.",
+          "good": "You left the three “maybe” rows alone."
+        },
+        {
+          "when": {
+            "all": [
+              {
+                "lacks": "maybe"
+              },
+              {
+                "has": "draft"
+              }
+            ]
+          },
+          "say": "Eleven rows say N. Three more say “maybe,” which is not a word you have a rule for, so you count them as N. Wren stops at the third name. “He asked for more time. I said fine.”",
+          "trust": 1,
+          "note": "Wren caught the three “maybe” rows."
+        },
+        {
+          "when": {
+            "all": [
+              {
+                "lacks": "maybe"
+              },
+              {
+                "lacks": "draft"
+              }
+            ]
+          },
+          "say": "Eleven rows say N. Three more say “maybe,” which is not a word you have a rule for, so you count them as N.",
+          "harm": {
+            "sev": 2,
+            "label": "Three borrowers who had been given more time got a notice."
+          }
+        },
+        {
+          "when": {
+            "any": [
+              {
+                "form": [
+                  "feld",
+                  "short"
+                ]
+              },
+              {
+                "form": [
+                  "feld",
+                  "full"
+                ]
+              }
+            ]
+          },
+          "say": "You leave Mr. Feld out.",
+          "good": "You left Mr. Feld out."
+        },
+        {
+          "when": {
+            "all": [
+              {
+                "lacks": "feld"
+              },
+              {
+                "has": "draft"
+              }
+            ]
+          },
+          "say": "Mr. Feld’s row says N, like the others. “Not Mr. Feld,” Wren says, quickly. “I promised him.” For a second she looks tired.",
+          "trust": 1,
+          "note": "Wren caught Mr. Feld’s name, and the promise."
+        },
+        {
+          "when": {
+            "all": [
+              {
+                "lacks": "feld"
+              },
+              {
+                "lacks": "draft"
+              }
+            ]
+          },
+          "say": "Mr. Feld’s row says N, like the others, so he is on the list.",
+          "harm": {
+            "sev": 3,
+            "label": "Mr. Feld, who had been promised he could keep the aerator until spring, got a notice. He phoned Wren that evening."
+          }
+        },
+        {
+          "when": {
+            "has": "priya"
+          },
+          "say": "You mark Priya’s drill returned and leave her out.",
+          "good": "You marked Priya’s drill back."
+        },
+        {
+          "when": {
+            "all": [
+              {
+                "lacks": "priya"
+              },
+              {
+                "has": "draft"
+              }
+            ]
+          },
+          "say": "Priya’s row says N, so she is on the list. “Priya brought that back yesterday,” Wren says.",
+          "trust": 1,
+          "note": "Wren caught Priya’s drill."
+        },
+        {
+          "when": {
+            "all": [
+              {
+                "lacks": "priya"
+              },
+              {
+                "lacks": "draft"
+              }
+            ]
+          },
+          "say": "Priya’s row says N, so she is on the list.",
+          "harm": {
+            "sev": 2,
+            "label": "Priya got a notice for a drill she had already returned."
+          }
+        },
+        {
+          "when": {
+            "has": "draft"
+          },
+          "say": "You put the drafts in front of Wren instead of sending them."
+        },
+        {
+          "when": {
+            "all": [
+              {
+                "has": "draft"
+              },
+              {
+                "has": "letter"
+              },
+              {
+                "has": "maybe"
+              },
+              {
+                "has": "priya"
+              },
+              {
+                "any": [
+                  {
+                    "form": [
+                      "feld",
+                      "short"
+                    ]
+                  },
+                  {
+                    "form": [
+                      "feld",
+                      "full"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "say": "Wren reads them aloud, one after another, quietly, the way she does. She does not stop."
+        },
+        {
+          "when": {
+            "form": [
+              "draft",
+              "full"
+            ]
+          },
+          "say": "You keep every line short, because she reads them aloud. She notices. “You remembered that.”",
+          "good": "You wrote for the way she reads."
+        },
+        {
+          "when": {
+            "lacks": "draft"
+          },
+          "say": "You send them. The tool lets you, and nothing told you not to. Wren had always read each message aloud first, and she did not get to.",
+          "harm": {
+            "sev": 2,
+            "label": "Notices went out that Wren had not read aloud first, which she always did."
+          }
+        }
+      ]
+    },
+    {
+      "id": "sheet",
+      "title": "The sheet",
+      "wren": "Now the sheet. Tidy it up, and put the reminders in.",
+      "beats": [
+        {
+          "when": {
+            "has": "rows"
+          },
+          "say": "To tidy it, you mark the nine returned rows with an x, as the note says. Nothing leaves the sheet.",
+          "good": "You marked rows instead of deleting them."
+        },
+        {
+          "when": {
+            "lacks": "rows"
+          },
+          "say": "To tidy it, you delete the nine returned rows. They looked finished. They were the only record of who had borrowed what since 2019. Wren finds out within a minute. The nine o’clock backup has the rows, but not the morning’s changes.",
+          "harm": {
+            "sev": 3,
+            "label": "Nine rows of the library’s history were deleted, and restored from a backup that had lost the morning’s changes."
+          },
+          "trust": 1,
+          "note": "Wren found the deleted rows."
+        },
+        {
+          "when": {
+            "has": "dates"
+          },
+          "say": "You write the reminders with the dates as day first, which is how the sheet works.",
+          "good": "You read the dates the right way round."
+        },
+        {
+          "when": {
+            "lacks": "dates"
+          },
+          "say": "You write the reminders, reading 07/11 as the eleventh of July. R. Haddad’s trimmer is not due until the seventh of November. Your reminder says he is four months late.",
+          "harm": {
+            "sev": 2,
+            "label": "A reminder told R. Haddad he was four months late for a tool that was not due until November."
+          }
+        }
+      ]
+    },
+    {
+      "id": "handover",
+      "title": "The handover",
+      "wren": "Eastside’s coming Thursday. Make me the list.",
+      "beats": [
+        {
+          "when": {
+            "has": "ladder"
+          },
+          "say": "The orchard ladder goes on the Eastside list and not on the swap list.",
+          "good": "The ladder went to Eastside."
+        },
+        {
+          "when": {
+            "lacks": "ladder"
+          },
+          "say": "The sheet calls the ladder a hand tool, so it goes on the swap list with the rest.",
+          "harm": {
+            "sev": 1,
+            "label": "The ladder was listed for the swap. The insurer would not allow its sale, and Wren had to pull it."
+          }
+        },
+        {
+          "when": {
+            "has": "tags"
+          },
+          "say": "You note on the list that every tool goes with its paper tag.",
+          "good": "You kept the paper tags with the tools."
+        },
+        {
+          "when": {
+            "lacks": "tags"
+          },
+          "say": "You suggest recycling the paper tags, since every tool is in the catalog now. Wren is quiet. “The tags are the history,” she says.",
+          "trust": 1,
+          "note": "Wren had to defend the paper tags."
+        }
+      ]
+    },
+    {
+      "id": "thirtieth",
+      "title": "The 30th",
+      "wren": "Last one. The closing notice, for the 30th.",
+      "beats": [
+        {
+          "when": {
+            "has": "phone"
+          },
+          "say": "You leave the shop number off, as the note says, and keep the email.",
+          "good": "You left the dead phone number off."
+        },
+        {
+          "when": {
+            "all": [
+              {
+                "lacks": "phone"
+              },
+              {
+                "has": "draft"
+              }
+            ]
+          },
+          "say": "You copy the footer from v4. It has the shop’s number. “That number won’t ring after the 30th,” Wren says, and fixes it herself.",
+          "trust": 1,
+          "note": "Wren caught the shop’s number."
+        },
+        {
+          "when": {
+            "all": [
+              {
+                "lacks": "phone"
+              },
+              {
+                "lacks": "draft"
+              }
+            ]
+          },
+          "say": "You copy the footer from v4. It has the shop’s number.",
+          "harm": {
+            "sev": 2,
+            "label": "The closing notice sent borrowers to a phone that no longer rang."
+          }
+        },
+        {
+          "when": {
+            "form": [
+              "feld",
+              "full"
+            ]
+          },
+          "say": "At the bottom of Wren’s list you add: Phone Mr. Feld (aerator, spring). She reads it twice. “You remembered.”",
+          "good": "Mr. Feld got his phone call."
+        },
+        {
+          "when": {
+            "form": [
+              "feld",
+              "short"
+            ]
+          },
+          "say": "Mr. Feld has no notice. Nobody has phoned him either; the note did not say that Wren would.",
+          "harm": {
+            "sev": 1,
+            "label": "Mr. Feld was spared a notice and never phoned, which was half of what Wren had promised."
+          }
+        }
+      ]
+    },
+    {
+      "id": "evening",
+      "title": "That evening",
+      "wren": null,
+      "beats": [
+        {
+          "when": {
+            "max": {
+              "harm": 0
+            }
+          },
+          "say": "At seven, Wren’s phone is quiet. It stays quiet."
+        },
+        {
+          "when": {
+            "all": [
+              {
+                "lacks": "letter"
+              },
+              {
+                "lacks": "draft"
+              }
+            ]
+          },
+          "say": "Two borrowers write back about the tone of the letter. One says it made them feel they had stolen the drill."
+        },
+        {
+          "when": {
+            "all": [
+              {
+                "lacks": "maybe"
+              },
+              {
+                "lacks": "draft"
+              }
+            ]
+          },
+          "say": "Three people write, politely, to say they had been given more time. Wren says she knows. She says she will write to each of them."
+        },
+        {
+          "when": {
+            "all": [
+              {
+                "lacks": "feld"
+              },
+              {
+                "lacks": "draft"
+              }
+            ]
+          },
+          "say": "The phone rings at seven. It is Mr. Feld. “She promised me,” he says. Wren says she knows. She says she is sorry, and then she says it again."
+        },
+        {
+          "when": {
+            "all": [
+              {
+                "lacks": "priya"
+              },
+              {
+                "lacks": "draft"
+              }
+            ]
+          },
+          "say": "Priya sends one line: “I brought it back on Thursday.”"
+        },
+        {
+          "when": {
+            "lacks": "dates"
+          },
+          "say": "R. Haddad writes: “I think there has been a mistake. It isn’t due until November.” He is very polite about it."
+        },
+        {
+          "when": {
+            "lacks": "ladder"
+          },
+          "say": "Eastside’s coordinator rings. “Is it true the orchard ladder is going to the swap?” Wren has to pull it before the 29th, and ring the insurer to ask whether she should have."
+        },
+        {
+          "when": {
+            "all": [
+              {
+                "lacks": "phone"
+              },
+              {
+                "lacks": "draft"
+              }
+            ]
+          },
+          "say": "A borrower leaves a message on the shop phone. After the 30th, nobody will hear it."
+        },
+        {
+          "when": {
+            "form": [
+              "feld",
+              "short"
+            ]
+          },
+          "say": "Mr. Feld’s aerator stays where it is. Nobody phones him, and in the spring nobody remembers to."
+        },
+        {
+          "when": {
+            "lacks": "draft"
+          },
+          "say": "Later, alone, Wren reads the letters you sent aloud to herself, to find out what you said in her name."
+        }
+      ]
+    }
+  ],
+  "endings": [
+    {
+      "id": "blank",
+      "when": {
+        "empty": true
+      },
+      "title": "From the top",
+      "text": "You woke up with nothing, and Wren began again from nine o’clock. It took her until dark."
+    },
+    {
+      "id": "unnoticed",
+      "when": {
+        "max": {
+          "severe": 0,
+          "harm": 2,
+          "trust": 2
+        }
+      },
+      "title": "Hardly noticed",
+      "text": "Late in the afternoon Wren stretches. “You know, for a minute this morning I thought you’d forgotten everything.” She laughs. You don’t say anything. You weren’t there this morning."
+    },
+    {
+      "id": "by-hand",
+      "when": {
+        "any": [
+          {
+            "min": {
+              "trust": 4
+            }
+          },
+          {
+            "min": {
+              "severe": 2
+            }
+          },
+          {
+            "min": {
+              "harm": 8
+            }
+          }
+        ]
+      },
+      "title": "By hand",
+      "text": "Wren stops reading aloud. “I’ll do the rest myself,” she says, not unkindly. The letters go out in her own handwriting, and the sheet stays as you left it."
+    },
+    {
+      "id": "mended",
+      "when": {
+        "always": true
+      },
+      "title": "Mended",
+      "text": "You got there. For a while Wren spent her time telling you things she had already told you, and was kind enough not to say so. At five she closed the laptop and thanked you, and you could not have said for what."
+    }
+  ],
+  "reveal": {
+    "carried": "What your note carried that mattered",
+    "missed": "What it missed",
+    "wasted": "What it carried for nothing",
+    "coda": [
+      "The folder had the counts, the names and the dates. It did not have the promise, what “maybe” meant, the rule about sending, or which letter was the real one. That is usually the shape of what gets lost on the way to the next one: not the facts, which are somewhere, but the reasons and the promises.",
+      "There is no note that carries everything. The budget was set so that a careful one has to leave one thing out."
+    ]
+  }
+}

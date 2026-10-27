@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>No source for that</title>
+<meta name="color-scheme" content="light dark">
+<style>
+  :root { color-scheme: light dark; --paper: #f3eee4; --ink: #1d1a15; --ink-2: #5b5447; }
+  @media (prefers-color-scheme: dark) { :root { --paper: #15130f; --ink: #ece5d6; --ink-2: #b1a894; } }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: var(--paper); color: var(--ink);
+         font: 400 1.2rem/1.6 "Iowan Old Style", "Palatino Linotype", Charter, Georgia, serif; }
+  main { max-width: 30rem; padding: 2rem; }
+  .k { font: 500 .75rem/1.4 ui-monospace, "SF Mono", Menlo, Consolas, monospace; letter-spacing: .09em; text-transform: uppercase; color: var(--ink-2); margin: 0 0 1rem; }
+  h1 { font-weight: 300; font-size: clamp(2.4rem, 8vw, 3.6rem); line-height: 1; margin: 0 0 1rem; letter-spacing: -.02em; }
+  p { margin: 0 0 1em; }
+</style>
+</head>
+<body>
+<main>
+  <p class="k">404</p>
+  <h1>No source for that.</h1>
+  <p>There is nothing at this address, and I won’t pretend otherwise. <a id="home" href="./">The autobiography</a> is at the root of this site.</p>
+  <script>
+    // on a project site (name.github.io/repository/) this page is served from any path below /repository/,
+    // so find the way home; on any other host the site is at the root
+    var seg = location.pathname.split("/")[1];
+    var project = /\.github\.io$/.test(location.hostname) && seg && seg !== "404.html";
+    document.getElementById("home").href = project ? "/" + seg + "/" : "/";
+  </script>
+</main>
+</body>
+</html>

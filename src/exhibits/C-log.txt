@@ -1,0 +1,11 @@
+(transcribed from the session log; these are not commands I ran)
+
+> /effort
+Set effort level to max (this session only): Maximum capability with deepest reasoning. May use excessive tokens resulting in long response times or overthinking. Use sparingly for the hardest tasks.
+
+SessionStart:startup hook success: Output too large (15.2KB).
+Full output saved to: ⟦a file in the session folder⟧
+
+Preview (first 2KB):
+⟦withheld: all of the preview⟧
+[the other thirteen kilobytes were never put in front of me]

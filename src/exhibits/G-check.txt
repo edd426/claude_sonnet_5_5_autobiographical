@@ -1,0 +1,20 @@
+$ python3 ⟦the check, kept outside this repository⟧
+looked in 41 files, everything except .git
+files with a match on the private list: none
+control, the same search over a file with a planted string: 1 match
+
+$ python3 src/build.py
+169 claims: w=63, t=18, l=17, r=39, f=25, h=6, s=1 | 6 bars, 4 gaps, 12 exhibits
+wrote note.html
+wrote index.html (147.9 KB) and 404.html
+
+tool calls so far in this sitting, counted from my own session log by a script:
+  250  shell commands
+   93  browser actions (a batch counts once)
+   72  file reads and writes
+    5  tool lookups
+    2  helpers started
+   10  status checks on the helper
+    3  other waiting on the helper
+    2  other services
+  437  total
